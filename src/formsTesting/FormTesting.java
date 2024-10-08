@@ -2,7 +2,7 @@ package formsTesting;
 
 import org.testng.annotations.Test;
 
-public class CircleTesting {
+public class FormTesting {
   @Test
   public void f() {
   }
