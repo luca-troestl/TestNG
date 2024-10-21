@@ -7,15 +7,23 @@ public class CircleTesting {
   
 	@Test
   public void testingCalculateArea() {
+	  try {
 	  Circle c = new Circle(1,1,5); // 1,1 are the Coordinates of the middle point
 	  double result = c.calculateArea();
 	  Assert.assertEquals(result,c.getRadius()*c.getRadius()*Math.PI);
+	  } catch (RadiusZeroException e){
+		  System.out.println(e.getMessage());
+	  }
   }
 	@Test
   public void testingCalculateArea2() {
+	  try {
 	  Circle c = new Circle(3,5,0); 
 	  double result = c.calculateArea();
 	  Assert.assertEquals(result,c.getRadius()*c.getRadius()*Math.PI);
+	  } catch(RadiusZeroException e) {
+		  System.out.println(e.getMessage());
+	  }
   }
 
 	
