@@ -17,9 +17,13 @@ public class Circle extends Form {
 		this.radius = radius;
 	}
 	
-	public double calculateArea() {
-		return Math.pow(this.radius, 2)*Math.PI;
-	}
+	public double calculateArea() throws RadiusZeroException {
+		if(this.radius < 0) {
+			throw new RadiusZeroException("Der Radius darf nicht kleiner als 0 sein!! IDIOT");
+			} else {
+			return Math.pow(this.radius, 2)*Math.PI;
+			}
+		}
 	
 	public double calculateCircumference() {
 		return 2*this.radius*Math.PI;

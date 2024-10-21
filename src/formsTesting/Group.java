@@ -33,7 +33,7 @@ public class Group {
 	 * 
 	 * @return the sum of the areas
 	 */
-	public double calculateArea() {
+	public double calculateArea() throws RadiusZeroException{
 		double sum = 0;
 		for(Form f : this.forms) {
 			sum += f.calculateArea();

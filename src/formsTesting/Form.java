@@ -30,8 +30,9 @@ public abstract class Form {
 	 * Method calculates the area.
 	 * 
 	 * @return the area
+	 * @throws RadiusZeroException 
 	 */
-	public abstract double calculateArea();
+	public abstract double calculateArea() throws RadiusZeroException;
 	
 	/**
 	 * Method calculates the circumference.
