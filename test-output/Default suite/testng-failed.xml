@@ -5,8 +5,7 @@
     <classes>
       <class name="formsTesting.CircleTesting">
         <methods>
-          <include name="testingToString"/>
-          <include name="testingToString2"/>
+          <include name="testingCalculateCircumference2"/>
         </methods>
       </class> <!-- formsTesting.CircleTesting -->
     </classes>

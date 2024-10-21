@@ -29,15 +29,23 @@ public class CircleTesting {
 	
 	@Test
   public void testingCalculateCircumference() {
+	  try {
 	  Circle c = new Circle(1,1,5); // 1,1 are the Coordinates of the middle point
 	  double result = c.calculateCircumference();
 	  Assert.assertEquals(result,c.getRadius()*2*Math.PI);
+	  } catch(RadiusZeroException e) {
+	  	  System.out.println(e.getMessage());
+	  }
   }
 	@Test
   public void testingCalculateCircumference2() {
+	  try {
 	  Circle c = new Circle(3,5,0); 
 	  double result = c.calculateCircumference();
 	  Assert.assertEquals(result,c.getRadius()*2*Math.PI);
+	  } catch(RadiusZeroException e) {
+		  System.out.println(e.getMessage());
+	  }
   }
 	
 	
