@@ -33,7 +33,7 @@ public class CircleTesting {
    * Method to test the method "CalculateCircumference"
    * The circle in this example has the radius of 4 --> works fine
    */
-  public void testCalculateCircumference1() {
+  public void testCalculateCircumference1() throws RadiusZeroException {
 	  Circle c = new Circle(1, 2, 4);
 	  double result = c.calculateCircumference();
 	  Assert.assertEquals(result, 2*c.getRadius()*Math.PI);
@@ -42,9 +42,9 @@ public class CircleTesting {
   @Test
   /**
    * Method to test the method "CalculateCircumference"
-   * The circle in this example has the radius of 0 --> works fine
+   * The circle in this example has the radius of 0 --> should throw an Exception
    */
-  public void testCalculateCircumference2() {
+  public void testCalculateCircumference2() throws RadiusZeroException{
 	  Circle c = new Circle(1, 2, 0);
 	  double result = c.calculateCircumference();
 	  Assert.assertEquals(result, 2*c.getRadius()*Math.PI);
