@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-21T15:28:01 MESZ" name="Default suite" finished-at="2024-10-21T15:28:01 MESZ" duration-ms="349">
+  <suite started-at="2024-10-21T16:02:45 MESZ" name="Default suite" finished-at="2024-10-21T16:02:46 MESZ" duration-ms="333">
     <groups>
     </groups>
-    <test started-at="2024-10-21T15:28:01 MESZ" name="Default test" finished-at="2024-10-21T15:28:01 MESZ" duration-ms="349">
-      <class name="formsTesting.CircleTesting">
-        <test-method signature="testCalculateArea1()[pri:0, instance:formsTesting.CircleTesting@4944252c]" started-at="2024-10-21T15:28:01 MESZ" name="testCalculateArea1" finished-at="2024-10-21T15:28:01 MESZ" duration-ms="51" status="PASS">
+    <test started-at="2024-10-21T16:02:45 MESZ" name="Default test" finished-at="2024-10-21T16:02:46 MESZ" duration-ms="333">
+      <class name="formsTesting.RectangleTesting">
+        <test-method signature="testCalculateAreaRectangle1()[pri:0, instance:formsTesting.RectangleTesting@4944252c]" started-at="2024-10-21T16:02:46 MESZ" name="testCalculateAreaRectangle1" finished-at="2024-10-21T16:02:46 MESZ" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCalculateArea1 -->
-        <test-method signature="testCalculateArea2()[pri:0, instance:formsTesting.CircleTesting@4944252c]" started-at="2024-10-21T15:28:01 MESZ" name="testCalculateArea2" finished-at="2024-10-21T15:28:01 MESZ" duration-ms="11" status="FAIL">
-          <exception class="formsTesting.RadiusZeroException">
+        </test-method> <!-- testCalculateAreaRectangle1 -->
+        <test-method signature="testCalculateAreaRectangle2()[pri:0, instance:formsTesting.RectangleTesting@4944252c]" started-at="2024-10-21T16:02:46 MESZ" name="testCalculateAreaRectangle2" finished-at="2024-10-21T16:02:46 MESZ" duration-ms="11" status="FAIL">
+          <exception class="formsTesting.LengthZeroException">
             <message>
-              <![CDATA[Der Radius darf nicht kleiner als 0 sein!! IDIOT]]>
+              <![CDATA[Die Länge oder Breite darf nicht 0 sein wenn die Fläche berechnet wird!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[formsTesting.RadiusZeroException: Der Radius darf nicht kleiner als 0 sein!! IDIOT
-at formsTesting.Circle.calculateArea(Circle.java:22)
-at formsTesting.CircleTesting.testCalculateArea2(CircleTesting.java:27)
+              <![CDATA[formsTesting.LengthZeroException: Die Länge oder Breite darf nicht 0 sein wenn die Fläche berechnet wird!
+at formsTesting.Rectangle.calculateArea(Rectangle.java:32)
+at formsTesting.RectangleTesting.testCalculateAreaRectangle2(RectangleTesting.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,23 +50,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- formsTesting.RadiusZeroException -->
+          </exception> <!-- formsTesting.LengthZeroException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCalculateArea2 -->
-        <test-method signature="testCalculateCircumference1()[pri:0, instance:formsTesting.CircleTesting@4944252c]" started-at="2024-10-21T15:28:01 MESZ" name="testCalculateCircumference1" finished-at="2024-10-21T15:28:01 MESZ" duration-ms="15" status="PASS">
+        </test-method> <!-- testCalculateAreaRectangle2 -->
+        <test-method signature="testCalculateCircumferenceRectangle1()[pri:0, instance:formsTesting.RectangleTesting@4944252c]" started-at="2024-10-21T16:02:46 MESZ" name="testCalculateCircumferenceRectangle1" finished-at="2024-10-21T16:02:46 MESZ" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCalculateCircumference1 -->
-        <test-method signature="testCalculateCircumference2()[pri:0, instance:formsTesting.CircleTesting@4944252c]" started-at="2024-10-21T15:28:01 MESZ" name="testCalculateCircumference2" finished-at="2024-10-21T15:28:01 MESZ" duration-ms="7" status="FAIL">
-          <exception class="formsTesting.RadiusZeroException">
+        </test-method> <!-- testCalculateCircumferenceRectangle1 -->
+        <test-method signature="testCalculateCircumferenceRectangle2()[pri:0, instance:formsTesting.RectangleTesting@4944252c]" started-at="2024-10-21T16:02:46 MESZ" name="testCalculateCircumferenceRectangle2" finished-at="2024-10-21T16:02:46 MESZ" duration-ms="4" status="FAIL">
+          <exception class="formsTesting.LengthZeroException">
             <message>
-              <![CDATA[Der Radius darf nicht kleiner als 0 sein!! IDIOT]]>
+              <![CDATA[Die Länge oder Breite darf nicht 0 sein wenn der Umfang berechnet wird!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[formsTesting.RadiusZeroException: Der Radius darf nicht kleiner als 0 sein!! IDIOT
-at formsTesting.Circle.calculateCircumference(Circle.java:30)
-at formsTesting.CircleTesting.testCalculateCircumference2(CircleTesting.java:49)
+              <![CDATA[formsTesting.LengthZeroException: Die Länge oder Breite darf nicht 0 sein wenn der Umfang berechnet wird!
+at formsTesting.Rectangle.calculateCircumference(Rectangle.java:40)
+at formsTesting.RectangleTesting.testCalculateCircumferenceRectangle2(RectangleTesting.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -97,11 +97,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- formsTesting.RadiusZeroException -->
+          </exception> <!-- formsTesting.LengthZeroException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCalculateCircumference2 -->
-      </class> <!-- formsTesting.CircleTesting -->
+        </test-method> <!-- testCalculateCircumferenceRectangle2 -->
+      </class> <!-- formsTesting.RectangleTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
