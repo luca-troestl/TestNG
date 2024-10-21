@@ -39,6 +39,6 @@ public abstract class Form {
 	 * 
 	 * @return the circumference
 	 */
-	public abstract double calculateCircumference();
+	public abstract double calculateCircumference() throws RadiusZeroException;
 	
 }

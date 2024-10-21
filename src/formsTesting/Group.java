@@ -47,7 +47,7 @@ public class Group {
 	 * 
 	 * @return the sum of the circumferences
 	 */
-	public double calculateCircumference() {
+	public double calculateCircumference() throws RadiusZeroException {
 		double sum = 1;
 		for(Form f : this.forms) {
 			sum += f.calculateCircumference();

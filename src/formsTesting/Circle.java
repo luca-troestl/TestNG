@@ -25,8 +25,12 @@ public class Circle extends Form {
 			}
 		}
 	
-	public double calculateCircumference() {
+	public double calculateCircumference() throws RadiusZeroException {
+		if(this.radius < 0) {
+			throw new RadiusZeroException("Der Radius darf nicht kleiner als 0 sein!! IDIOT");
+			} else {
 		return 2*this.radius*Math.PI;
+			}
 	}
 	
 	
