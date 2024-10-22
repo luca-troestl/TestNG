@@ -27,6 +27,9 @@ public class Rectangle extends Form {
 		this.length = length;
 	}
 
+	/**
+	 * Calculates the area of the rectangle
+	 */
 	public double calculateArea() throws LengthZeroException {
 		if(this.width <= 0 || this.length <= 0) {
 			throw new LengthZeroException("Die Länge oder Breite darf nicht 0 sein wenn die Fläche berechnet wird!");
@@ -34,7 +37,9 @@ public class Rectangle extends Form {
 			return this.width*this.length;
 		}
 	}
-
+	/**
+	 * Calculates the circumference of the rectangle
+	 */
 	public double calculateCircumference() throws LengthZeroException {
 		if(this.width <= 0 || this.length <= 0) {
 			throw new LengthZeroException("Die Länge oder Breite darf nicht 0 sein wenn der Umfang berechnet wird!");
