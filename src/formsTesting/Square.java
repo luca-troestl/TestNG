@@ -17,6 +17,9 @@ public class Square extends Form {
 		this.width = width;
 	}
 
+	/**
+	 * Calculates the area of the square
+	 */
 	public double calculateArea() throws LengthZeroException{
 		if(this.width <= 0) {
 			throw new LengthZeroException("Die Länge oder Breite darf nicht 0 sein wenn die Fläche berechnet wird!");
@@ -25,6 +28,9 @@ public class Square extends Form {
 		}
 	}
 
+	/**
+	 * Calculates the circumference of the square
+	 */
 	public double calculateCircumference() throws LengthZeroException{
 		if(this.width <= 0) {
 			throw new LengthZeroException("Die Länge oder Breite darf nicht 0 sein wenn der Umfang berechnet wird!");
