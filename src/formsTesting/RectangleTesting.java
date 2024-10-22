@@ -51,10 +51,14 @@ public class RectangleTesting {
 		
 		@Test
 	  public void testingToString() {
-		  
+			Rectangle r = new Rectangle(1,1,4,5);
+			String result = r.toString();
+			Assert.assertEquals(result,"Rectangle (1|1) with width = 4 and length = 5");
 	  }
 		@Test
 	  public void testingToString2() {
-		  
+			Rectangle r = new Rectangle(4,7,2,1);
+			String result = r.toString();
+			Assert.assertEquals(result,"Rectangle (4|7) with width = 2 and length = 1");
 	  }
 }
