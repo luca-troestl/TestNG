@@ -17,6 +17,9 @@ public class Circle extends Form {
 		this.radius = radius;
 	}
 	
+	/**
+	 * Calculates the area of the circle
+	 */
 	public double calculateArea() throws LengthZeroException {
 		if(this.radius <= 0) {
 			throw new LengthZeroException("Der Radius darf nicht kleiner als 0 sein!! IDIOT");
@@ -25,6 +28,10 @@ public class Circle extends Form {
 			}
 		}
 	
+	
+	/**
+	 * Calculates the circumference of the circle
+	 */
 	public double calculateCircumference() throws LengthZeroException {
 		if(this.radius <= 0) {
 			throw new LengthZeroException("Der Radius darf nicht kleiner als 0 sein!! IDIOT");
