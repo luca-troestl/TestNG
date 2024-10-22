@@ -93,7 +93,7 @@ public class GroupTesting {
     }
  
      /**
-     * DIe Methode testet ob deine Fette schiache Mutter einen 40cm Dildo deepthroaten kann.
+     * The method is searching for the biggest form
      */
     @Test
     public void testFindBiggestForm() throws LengthZeroException {
