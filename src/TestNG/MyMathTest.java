@@ -1,4 +1,4 @@
-package htl;
+package TestNG;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

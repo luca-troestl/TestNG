@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="formsTesting.CircleTesting">
+      <class name="formsTesting.GroupTesting">
         <methods>
-          <include name="testingCalculateCircumference2"/>
+          <include name="testFindBiggestForm2"/>
+          <include name="testCalculateCurcumference"/>
+          <include name="testCalculateCircumference2"/>
         </methods>
-      </class> <!-- formsTesting.CircleTesting -->
+      </class> <!-- formsTesting.GroupTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
