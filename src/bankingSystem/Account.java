@@ -9,6 +9,11 @@ public class Account {
 	    this.accountNumber = accountNumber;
 	    this.balance = balance;
 	}
+	
+	public Account(String accountNumber) {
+		this.accountNumber = accountNumber;
+		this.balance = 0;
+	}
  
 	public double getBalance() {
         return balance;
