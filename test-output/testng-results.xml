@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="5" failed="3" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-22T10:35:41 MESZ" name="Default suite" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="84">
+  <suite started-at="2024-11-05T11:05:27 MEZ" name="Default suite" finished-at="2024-11-05T11:05:27 MEZ" duration-ms="70">
     <groups>
     </groups>
-    <test started-at="2024-10-22T10:35:41 MESZ" name="Default test" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="84">
-      <class name="formsTesting.GroupTesting">
-        <test-method signature="testAddForm()[pri:0, instance:formsTesting.GroupTesting@625732]" started-at="2024-10-22T10:35:41 MESZ" name="testAddForm" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="11" status="PASS">
+    <test started-at="2024-11-05T11:05:27 MEZ" name="Default test" finished-at="2024-11-05T11:05:27 MEZ" duration-ms="70">
+      <class name="exceptionsTesting.Test_Aufgabe3">
+        <test-method signature="testParseint()[pri:0, instance:exceptionsTesting.Test_Aufgabe3@41e1e210]" started-at="2024-11-05T11:05:27 MEZ" name="testParseint" finished-at="2024-11-05T11:05:27 MEZ" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddForm -->
-        <test-method signature="testAddForm2()[pri:0, instance:formsTesting.GroupTesting@625732]" started-at="2024-10-22T10:35:41 MESZ" name="testAddForm2" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddForm2 -->
-        <test-method signature="testCalculateArea()[pri:0, instance:formsTesting.GroupTesting@625732]" started-at="2024-10-22T10:35:41 MESZ" name="testCalculateArea" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculateArea -->
-        <test-method signature="testCalculateArea2()[pri:0, instance:formsTesting.GroupTesting@625732]" started-at="2024-10-22T10:35:41 MESZ" name="testCalculateArea2" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculateArea2 -->
-        <test-method signature="testCalculateCircumference2()[pri:0, instance:formsTesting.GroupTesting@625732]" started-at="2024-10-22T10:35:41 MESZ" name="testCalculateCircumference2" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="3" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- testParseint -->
+        <test-method signature="testParseint2()[pri:0, instance:exceptionsTesting.Test_Aufgabe3@41e1e210]" started-at="2024-11-05T11:05:27 MEZ" name="testParseint2" finished-at="2024-11-05T11:05:27 MEZ" duration-ms="1" status="FAIL">
+          <exception class="exceptionsTesting.InvalidNumberException">
             <message>
-              <![CDATA[expected [264.3451151369263] but found [265.3451151369263]]]>
+              <![CDATA[Keine Zahl eingegeben!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [264.3451151369263] but found [265.3451151369263]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEquals(Assert.java:701)
-at org.testng.Assert.assertEquals(Assert.java:712)
-at formsTesting.GroupTesting.testCalculateCircumference2(GroupTesting.java:79)
+              <![CDATA[exceptionsTesting.InvalidNumberException: Keine Zahl eingegeben!
+at exceptionsTesting.Aufgabe3.parseInt(Aufgabe3.java:9)
+at exceptionsTesting.Test_Aufgabe3.testParseint2(Test_Aufgabe3.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,108 +50,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- exceptionsTesting.InvalidNumberException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCalculateCircumference2 -->
-        <test-method signature="testCalculateCurcumference()[pri:0, instance:formsTesting.GroupTesting@625732]" started-at="2024-10-22T10:35:41 MESZ" name="testCalculateCurcumference" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="1" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [68.54866776461628] but found [69.54866776461628]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [68.54866776461628] but found [69.54866776461628]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEquals(Assert.java:701)
-at org.testng.Assert.assertEquals(Assert.java:712)
-at formsTesting.GroupTesting.testCalculateCurcumference(GroupTesting.java:65)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCalculateCurcumference -->
-        <test-method signature="testFindBiggestForm()[pri:0, instance:formsTesting.GroupTesting@625732]" started-at="2024-10-22T10:35:41 MESZ" name="testFindBiggestForm" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFindBiggestForm -->
-        <test-method signature="testFindBiggestForm2()[pri:0, instance:formsTesting.GroupTesting@625732]" started-at="2024-10-22T10:35:41 MESZ" name="testFindBiggestForm2" finished-at="2024-10-22T10:35:41 MESZ" duration-ms="10" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Square (2.0|11.0) with width = 34.0] but found [Rectangle (2.0|9.0) with width = 4.0 and length = 4.0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Square (2.0|11.0) with width = 34.0] but found [Rectangle (2.0|9.0) with width = 4.0 and length = 4.0]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:617)
-at formsTesting.GroupTesting.testFindBiggestForm2(GroupTesting.java:105)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFindBiggestForm2 -->
-      </class> <!-- formsTesting.GroupTesting -->
+        </test-method> <!-- testParseint2 -->
+      </class> <!-- exceptionsTesting.Test_Aufgabe3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
