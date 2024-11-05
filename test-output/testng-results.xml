@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-05T10:11:51 MEZ" name="Default suite" finished-at="2024-11-05T10:11:52 MEZ" duration-ms="115">
+  <suite started-at="2024-11-05T10:31:50 MEZ" name="Default suite" finished-at="2024-11-05T10:31:50 MEZ" duration-ms="64">
     <groups>
     </groups>
-    <test started-at="2024-11-05T10:11:51 MEZ" name="Default test" finished-at="2024-11-05T10:11:52 MEZ" duration-ms="115">
-      <class name="exceptionsTesting.TestAufgabe1">
-        <test-method signature="testSqrt1()[pri:0, instance:exceptionsTesting.TestAufgabe1@41e1e210]" started-at="2024-11-05T10:11:51 MEZ" name="testSqrt1" finished-at="2024-11-05T10:11:52 MEZ" duration-ms="29" status="PASS">
+    <test started-at="2024-11-05T10:31:50 MEZ" name="Default test" finished-at="2024-11-05T10:31:50 MEZ" duration-ms="64">
+      <class name="exceptionsTesting.TestAufgabe2">
+        <test-method signature="testStringReverse1()[pri:0, instance:exceptionsTesting.TestAufgabe2@41e1e210]" started-at="2024-11-05T10:31:50 MEZ" name="testStringReverse1" finished-at="2024-11-05T10:31:50 MEZ" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSqrt1 -->
-        <test-method signature="testSqrt2()[pri:0, instance:exceptionsTesting.TestAufgabe1@41e1e210]" started-at="2024-11-05T10:11:52 MEZ" name="testSqrt2" finished-at="2024-11-05T10:11:52 MEZ" duration-ms="2" status="FAIL">
+        </test-method> <!-- testStringReverse1 -->
+        <test-method signature="testStringReverse2()[pri:0, instance:exceptionsTesting.TestAufgabe2@41e1e210]" started-at="2024-11-05T10:31:50 MEZ" name="testStringReverse2" finished-at="2024-11-05T10:31:50 MEZ" duration-ms="1" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[The value has to be positive!]]>
+              <![CDATA[Input can not be nothing!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: The value has to be positive!
-at exceptionsTesting.Aufgabe1.sqrt(Aufgabe1.java:8)
-at exceptionsTesting.TestAufgabe1.testSqrt2(TestAufgabe1.java:18)
+              <![CDATA[java.lang.IllegalArgumentException: Input can not be nothing!
+at exceptionsTesting.Aufgabe2.reverse(Aufgabe2.java:7)
+at exceptionsTesting.TestAufgabe2.testStringReverse2(TestAufgabe2.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,8 +53,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSqrt2 -->
-      </class> <!-- exceptionsTesting.TestAufgabe1 -->
+        </test-method> <!-- testStringReverse2 -->
+      </class> <!-- exceptionsTesting.TestAufgabe2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
