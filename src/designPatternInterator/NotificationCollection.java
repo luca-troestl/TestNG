@@ -1,7 +1,7 @@
 package designPatternInterator;
-
-public class NotificationCollection implements Collection{
-	
+ 
+public class NotificationCollection {
+ 
 	private static final int maxItems = 6;
 	int numberOfItems = 0;
 	Notification[] notificationList;
@@ -12,11 +12,12 @@ public class NotificationCollection implements Collection{
 	
 	public void addItem(String str) {
 		Notification notification = new Notification(str);
-		if (numberOfItems >= maxItems) {
+		if(numberOfItems >= maxItems) {
 			System.err.println("Notification collection is full!");
-	} else {
-		notificationList[numberOfItems] = notification;
-		numberOfItems++;
+		} else {
+			notificationList[numberOfItems] = notification;
+			numberOfItems++;
+		}
 	}
 	
 	public Iterator createIterator() {
@@ -24,3 +25,5 @@ public class NotificationCollection implements Collection{
 	}
 	
 }
+ 
+ 

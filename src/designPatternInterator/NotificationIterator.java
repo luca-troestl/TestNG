@@ -1,6 +1,6 @@
 package designPatternInterator;
 
-public class NotificationIterator {
+public class NotificationIterator implements Iterator{
 
 	private Notification[] notificationList;
 	private int pos;
@@ -17,9 +17,10 @@ public class NotificationIterator {
 	}
 	
 	public boolean hasNext() {
-		if(pos < notificationList.length) {
+		if(pos < notificationList.length && notificationList[pos] != null) {
 			return true;
 		}
+		return false;
 	}
 	
 }
