@@ -1,4 +1,4 @@
-package wetterStation;
+package weatherStation;
 
 public class WeatherTemperature implements Weather {
 
