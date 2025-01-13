@@ -2,6 +2,7 @@ package designPatternInterator;
 
 public interface Collection {
 	
-	public Iterator createInterator();
+	public Iterator createIterator();
 	
+	public void addItem(String str);
 }

@@ -9,7 +9,10 @@ public class NotificationCollection {
 	public NotificationCollection() {
 		this.notificationList = new Notification[maxItems];
 	}
-	
+	/**
+	 * The Method adds an Item to the Notification List
+	 * @param str
+	 */
 	public void addItem(String str) {
 		Notification notification = new Notification(str);
 		if(numberOfItems >= maxItems) {
@@ -19,7 +22,10 @@ public class NotificationCollection {
 			numberOfItems++;
 		}
 	}
-	
+	/**
+	 * The Methods creates a new Iterator
+	 * @return
+	 */
 	public Iterator createIterator() {
 		return new NotificationIterator(notificationList);
 	}
