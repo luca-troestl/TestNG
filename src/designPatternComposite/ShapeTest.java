@@ -10,7 +10,7 @@ public class ShapeTest {
 		
 		Shape cs1 = new ComposedShape();
 		cs1.add(c);
-		cs1.add(t);
+		cs1.add(r);
 		
 		Shape cs2 = new ComposedShape();
 		cs2.add(cs1);

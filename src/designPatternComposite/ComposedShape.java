@@ -13,9 +13,11 @@ public class ComposedShape extends Shape {
 
 	@Override
 	public void display() {
+		System.out.print("[");
 		for(Shape shape : shapes) {
 			shape.display();
 		}
+		System.out.print("]");
 	}
 	
 	public void add(Shape shape) {
