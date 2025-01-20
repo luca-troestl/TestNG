@@ -18,7 +18,6 @@ public class ShapeTest {
 		
 		Screen screen1 = new Screen(cs1);
 		screen1.display();
-		System.out.println("");
 		Screen screen2 = new Screen(cs2);
 		screen2.display();
 		
