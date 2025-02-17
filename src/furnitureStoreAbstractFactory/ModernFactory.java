@@ -1,5 +1,5 @@
 package furnitureStoreAbstractFactory;
 
-public class ModernFactory {
+public class ModernFactory extends FurnitureFactory {
 
 }

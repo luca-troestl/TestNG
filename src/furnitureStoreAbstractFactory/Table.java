@@ -1,5 +1,5 @@
 package furnitureStoreAbstractFactory;
 
-public class Table {
+public abstract class Table {
 
 }

@@ -1,5 +1,5 @@
 package furnitureStoreAbstractFactory;
 
-public class Chairs {
+public abstract class Chairs {
 
 }

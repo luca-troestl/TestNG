@@ -1,5 +1,5 @@
 package furnitureStoreAbstractFactory;
 
-public class AntiqueTable {
+public class AntiqueTable extends Table {
 
 }
