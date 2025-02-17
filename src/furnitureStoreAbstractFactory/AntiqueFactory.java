@@ -4,14 +4,12 @@ public class AntiqueFactory extends FurnitureFactory {
 
 	@Override
 	public Chairs createChair() {
-		// TODO Auto-generated method stub
-		return null;
+		return new AntiqueChair();
 	}
 
 	@Override
 	public Table createTable() {
-		// TODO Auto-generated method stub
-		return null;
+		return new AntiqueTable();
 	}
 
 }
