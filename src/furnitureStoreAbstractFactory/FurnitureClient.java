@@ -15,7 +15,7 @@ private FurnitureFactory factory;
 	
 	public void orderFurniture() {
 		Chairs chair = factory.createChair();
-		Table table = factory.createTable();
+		Table table = factory.createTable(); 
 		chair.orderItem();
 		table.orderItem();
 	}
