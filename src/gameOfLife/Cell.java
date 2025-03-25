@@ -11,7 +11,7 @@ public class Cell {
 	 */
 	private boolean setCellCondition() {
 		double d = Math.random(); 
-		if(d>=0.8) { //if the random number is bigger than 0.8 than the cell is alive
+		if(d>=0.8) { // 20% chance that the cell is alive
 			return true;
 		} else {
 			return false;
@@ -34,9 +34,9 @@ public class Cell {
 	 */
 	public String toString() {
 		if(isAlive==true) {
-			return "X";
+			return "X"; // If the cell is alive 'X' will be printed out
 		} else {
-			return ".";
+			return "."; // If it's dead than '.' will be printed out
 		}
 	}
 	
