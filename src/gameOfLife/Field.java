@@ -2,10 +2,15 @@ package gameOfLife;
 
 public class Field {
 
-	private int length = 20;
-	private int width = 100; 
-	
-	Cell [][] matrix = new Cell[length][width];
+	private int length;
+	private int width; 
+	Cell [][] matrix;
+
+	public Field(int l, int w) {
+		this.length = l;
+		this.width = w;
+		this.matrix = new Cell[this.length][this.width];
+	}
 	
 	
 	/**
@@ -61,7 +66,6 @@ public class Field {
 	 * The method goes over every cell in the matrix and determines if they are dead or alive in the next round
 	 */
 	public void nextRound() {
-		
 		for(int i=1;i<length-1;i++) {
 			for(int j=1;j<width-1;j++) {
 				int ln = anzahlLebendeNachbarn(i,j); // the count of the alive neighbours is determined with the method above
@@ -90,7 +94,7 @@ public class Field {
 			for(int j=0;j<width;j++) {
 				System.out.print(matrix[i][j]); // prints out every Cell in the matrix
 			}
-			System.out.println(); // With this it will move another line each row
+			System.out.println(); // With this it will move to another line each row
 		}
 		System.out.println(); // two lines after each round
 		System.out.println(); 

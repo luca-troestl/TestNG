@@ -7,7 +7,7 @@ import java.io.IOException;
 public class FileExists {
 	
 	public static void main(String[] args) throws IOException {
-		/**
+		
 		File file = new File("C:\\Schule 4ha\\SWP\\Random");
 		if(file.exists()) {
 			System.out.println("Die Datei existiert");
@@ -30,10 +30,7 @@ public class FileExists {
 				writer.write(ka);
 			}
 		}
-		**/
-		for(int i=1,a=0; i>a;i++) {
-			System.out.println(i);
-		}
+		
 		
 	}
 	

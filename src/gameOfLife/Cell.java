@@ -7,11 +7,11 @@ public class Cell {
 	
 	/**
 	 * The Method decides randomly if the Cell is dead or alive
-	 * @return true (20%) or falls (80%)
+	 * @return true (40%) or falls (60%)
 	 */
 	private boolean setCellCondition() {
 		double d = Math.random(); 
-		if(d>=0.8) { // 20% chance that the cell is alive
+		if(d>=0.6) { // 40% chance that the cell is alive
 			return true;
 		} else {
 			return false;
