@@ -23,14 +23,14 @@ public class LambdaHeroes {
 		
 		// Aufgabe T2
 		Predicate<Hero> isAppearanceAfter1900 = hero -> hero.yearFirstAppearance() >= 1900;
-		System.out.println("Sind alle Helden innerhalb der Liste nach 1900 veröffentlicht worden? " + heroes.stream().allMatch(isAppearanceAfter1900));
+		System.out.println("Sind alle Helden innerhalb der Liste nach 1900 veroeffentlicht worden? " + heroes.stream().allMatch(isAppearanceAfter1900));
 		
 		// Aufgabe T3
 		Predicate<Hero> isOneGirl = hero -> hero.sex() == Sex.FEMALE;
 		System.out.println("Gibt es innerhalb der Liste eine Heldin? " + heroes.stream().anyMatch(isOneGirl));
 			
 		Predicate<Hero> isAppearanceAfter1950 = hero -> hero.yearFirstAppearance() >= 1950;
-		System.out.println("Gibt es einen Helden der nach 1950 veröffentlicht wurde? " + heroes.stream().anyMatch(isAppearanceAfter1950));
+		System.out.println("Gibt es einen Helden der nach 1950 veroeffentlicht wurde? " + heroes.stream().anyMatch(isAppearanceAfter1950));
 		
 		
 
