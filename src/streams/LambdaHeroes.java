@@ -130,13 +130,15 @@ System.out.println("Intermediäre Operationen: ---------------------------------
 			.filter(hero -> hero.sex() == Sex.FEMALE)
 			.map(Hero::name)
 			.collect(Collectors.joining(", "));
-
-		System.out.println("Namen der weiblichen Helden: " + femaleHeroNames);
+			
+			System.out.println("Namen der weiblichen Helden: " + femaleHeroNames);
+	
 
 		// b) 
 		List<String> anonymousHeroes = heroes.stream()
 			.map(hero -> hero.name().replaceAll("\\(.*?\\)", "").trim())
 			.collect(Collectors.toList());
+
 			System.out.println("Namen der Helden ohne Alias: " + anonymousHeroes);
 			
 		// c) 
@@ -145,6 +147,7 @@ System.out.println("Intermediäre Operationen: ---------------------------------
 			.map(Hero::yearFirstAppearance)
 			.distinct()
 			.collect(Collectors.toList());
+
 		System.out.println("Jahre, in denen Helden erschienen sind: " + yearsHerosHaveAppeared);
 
 		System.out.println("------------------------------------------------------------------------------------------------------");
@@ -156,8 +159,10 @@ System.out.println("Intermediäre Operationen: ---------------------------------
 			.collect(Collectors.toList());
 
 		System.out.println("Alle Helden aus allen Universen: " + allUniverses.stream().map(Hero::name).collect(Collectors.joining(", ")));
-
+		
 		System.out.println("------------------------------------------------------------------------------------------------------");
+
+
 	}
 
 }
