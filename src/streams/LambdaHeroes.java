@@ -41,6 +41,16 @@ public class LambdaHeroes {
 		Comparator<Hero> firstAppearingHero = Comparator.comparingInt(h -> h.yearFirstAppearance());
 		System.out.println("Der erste Held, der in der Liste vorkommt ist: " + heroes.stream().min(firstAppearingHero));
 
+		// Übung auf den Test:
+		Predicate<Hero> isOneMan = hero -> hero.sex() == Sex.MALE;
+		Predicate<Hero> isBefore1950 = hero -> hero.yearFirstAppearance() < 1950;
+		System.out.println("Gibt es einen männlichen Helden, der vor 1950 veroeffentlicht wurde? " + heroes.stream().anyMatch(isOneMan.and(isBefore1950)));
+
+		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+		Integer sum = numbers.stream()
+			.reduce(0, Integer::sum);
+		System.out.println("Die Summe der Zahlen ist: " + sum);
+
 
 		System.out.println("------------------------------------------------------------------------------------------------------");
 

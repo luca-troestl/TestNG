@@ -1,9 +1,14 @@
 package streams;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collector;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.io.IOException;
+import java.io.FileReader;
 
 public class test_uebungen {
     
@@ -33,8 +38,25 @@ public class test_uebungen {
                 .reduce(0, Integer::sum); // Mit der Methode reduce() werden alle Einträge einer Liste summiert
         System.out.println("The sum of all numbers in the list= " + summeAllerZahlen);
 
-        
 
+       List<Integer> zahlen2 = Arrays.asList(1, 2, 3, 4, 5);
+       List <Integer> ganzeZahlen = zahlen2.stream()
+                 .filter(zahl -> zahl % 2 == 0)
+                 .collect(Collectors.toList());
+        System.out.println(ganzeZahlen); // Die neue Liste mit den gefilterten Einträgen wird auf der Konsole ausgegeben
+
+        // Diese Aufgabe nimmt mir meine Lust am Leben 
+        
+        File file_test = new File("test.txt");
+
+        try(BufferedReader br = new BufferedReader(new FileReader(file_test))) {
+                String line;
+                while((line = br.readLine()) != null) {
+                        System.out.println(line.toUpperCase());
+                }
+        } catch (IOException e) {
+                System.out.println("Datei nicht gefunden");
+        }
     }
 
 
