@@ -1,5 +1,5 @@
 package formsTesting;
-
+ 
 public class Square extends Form {
 	
 	private double width;
@@ -8,18 +8,30 @@ public class Square extends Form {
 		super(x, y);
 		this.width = width;
 	}
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 	public double getWidth() {
 		return width;
 	}
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 	public void setWidth(double width) {
 		this.width = width;
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Calculates the area of the square
 	 */
+=======
+ 
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 	public double calculateArea() throws LengthZeroException{
 		if(this.width <= 0) {
 			throw new LengthZeroException("Die Länge oder Breite darf nicht 0 sein wenn die Fläche berechnet wird!");
@@ -27,10 +39,14 @@ public class Square extends Form {
 		return this.width*this.width;
 		}
 	}
+<<<<<<< HEAD
 
 	/**
 	 * Calculates the circumference of the square
 	 */
+=======
+ 
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 	public double calculateCircumference() throws LengthZeroException{
 		if(this.width <= 0) {
 			throw new LengthZeroException("Die Länge oder Breite darf nicht 0 sein wenn der Umfang berechnet wird!");
@@ -40,9 +56,14 @@ public class Square extends Form {
 	}
 	
 	public String toString() {
+<<<<<<< HEAD
 		return "Square (" + this.getX() + "|" + this.getY() + ") with width = " 
 				+ this.getWidth(); 
+=======
+		return "Square (" + this.getX() + "|" + this.getY() + ") with width = "
+				+ this.getWidth();
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 	}
 	
-
+ 
 }

@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+=======
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2024-11-05T11:15:19 MEZ" name="Default suite" finished-at="2024-11-05T11:15:19 MEZ" duration-ms="119">
+=======
+  <suite started-at="2024-11-05T11:43:24 MEZ" name="Default suite" finished-at="2024-11-05T11:43:24 MEZ" duration-ms="51">
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2024-11-05T11:15:19 MEZ" name="Default test" finished-at="2024-11-05T11:15:19 MEZ" duration-ms="119">
       <class name="exceptionsTesting.TestAufgabe3">
         <test-method signature="testAufgabe3_1()[pri:0, instance:exceptionsTesting.TestAufgabe3@41e1e210]" started-at="2024-11-05T11:15:19 MEZ" name="testAufgabe3_1" finished-at="2024-11-05T11:15:19 MEZ" duration-ms="21" status="PASS">
+=======
+    <test started-at="2024-11-05T11:43:24 MEZ" name="Default test" finished-at="2024-11-05T11:43:24 MEZ" duration-ms="51">
+      <class name="exceptionsTesting.Test_Aufgabe4">
+        <test-method signature="testReadFile2()[pri:0, instance:exceptionsTesting.Test_Aufgabe4@272ed83b]" started-at="2024-11-05T11:43:24 MEZ" name="testReadFile2" finished-at="2024-11-05T11:43:24 MEZ" duration-ms="10" status="PASS">
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- testAufgabe3_1 -->
         <test-method signature="testAufgabe3_2()[pri:0, instance:exceptionsTesting.TestAufgabe3@41e1e210]" started-at="2024-11-05T11:15:19 MEZ" name="testAufgabe3_2" finished-at="2024-11-05T11:15:19 MEZ" duration-ms="2" status="FAIL">
           <exception class="exceptionsTesting.InvalidNumberException">
@@ -55,6 +70,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- testAufgabe3_2 -->
       </class> <!-- exceptionsTesting.TestAufgabe3 -->
+=======
+        </test-method> <!-- testReadFile2 -->
+      </class> <!-- exceptionsTesting.Test_Aufgabe4 -->
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

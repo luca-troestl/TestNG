@@ -32,13 +32,23 @@ public abstract class Form {
 	 * @return the area
 	 * @throws LengthZeroException 
 	 */
+<<<<<<< HEAD
 	public abstract double calculateArea() throws LengthZeroException;
+=======
+	public abstract double calculateArea() throws RadiusZeroException,WidthZeroException,
+	LengthZeroException;
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 	
 	/**
 	 * Method calculates the circumference.
 	 * 
 	 * @return the circumference
 	 */
+<<<<<<< HEAD
 	public abstract double calculateCircumference() throws LengthZeroException;
+=======
+	public abstract double calculateCircumference() throws RadiusZeroException,WidthZeroException,
+		LengthZeroException;
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 	
 }

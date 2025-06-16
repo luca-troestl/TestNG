@@ -3,11 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="exceptionsTesting.TestAufgabe3">
+=======
+      <class name="exceptionsTesting.Test_Aufgabe3">
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
         <methods>
+<<<<<<< HEAD
           <include name="testAufgabe3_2"/>
+=======
+          <include name="testParseint2"/>
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- exceptionsTesting.TestAufgabe3 -->
+=======
+      </class> <!-- exceptionsTesting.Test_Aufgabe3 -->
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -71,7 +71,6 @@ public class Group {
 	 */
 	public Form findBiggestForm() {
 		Form form = this.forms.get(0);
-		
 		return form;
 	}
 

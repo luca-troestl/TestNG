@@ -1,4 +1,4 @@
-package htl;
+package TestNG;
 
 public class MyMath {
 

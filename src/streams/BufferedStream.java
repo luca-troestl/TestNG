@@ -1,5 +1,6 @@
 package streams;
 
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -34,3 +35,22 @@ public class BufferedStream {
 		}
 		}
 	}
+=======
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.File;
+import java.io.FileWriter;
+
+public class BufferedStream {
+
+	public static void main(String[] args) throws IOException {
+		File file = new File ("C:\\Schule 4ha\\SWP\\Random\\");
+		File file2 = new File (file,"datei.txt");
+		try (BufferedWriter writer = new BufferedWriter(new FileWriter(file2))) {
+			file2.createNewFile();
+			writer.write("1\n" + "2\n" + "3");
+		}
+	}
+
+}
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git

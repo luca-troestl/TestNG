@@ -17,6 +17,7 @@ public class Circle extends Form {
 		this.radius = radius;
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * Calculates the area of the circle
 	 */
@@ -27,7 +28,16 @@ public class Circle extends Form {
 			return Math.pow(this.radius, 2)*Math.PI;
 			}
 		}
+=======
+	public double calculateArea() throws RadiusZeroException{
+		if(this.radius<=0) {
+			throw new RadiusZeroException("Der Radius darf nicht null oder kleiner sein!");
+		}
+		return Math.pow(this.radius, 2)*Math.PI;
+	}
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 	
+<<<<<<< HEAD
 	
 	/**
 	 * Calculates the circumference of the circle
@@ -36,6 +46,12 @@ public class Circle extends Form {
 		if(this.radius <= 0) {
 			throw new LengthZeroException("Der Radius darf nicht kleiner als 0 sein!! IDIOT");
 			} else {
+=======
+	public double calculateCircumference() throws RadiusZeroException{
+		if(this.radius<=0) {
+			throw new RadiusZeroException("Der Radius darf nicht null oder kleiner sein!");
+		}
+>>>>>>> branch 'master' of https://github.com/StringManu/4haSWP.git
 		return 2*this.radius*Math.PI;
 			}
 	}
