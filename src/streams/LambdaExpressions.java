@@ -10,7 +10,7 @@ public class LambdaExpressions {
 		
 	// Aufgabe 1 ---------------------------------------------------------------------------------------------------------------------
 		
-		List<String> names = Arrays.asList("anna", "bernd", "clara");
+		List<String> names = Arrays.<String>asList("anna", "bernd", "clara");
 		
 		//Aufgabe 1 mit einer Methodenreferenz
 		List<String> namesInUpperCase = names.stream()
@@ -61,7 +61,7 @@ public class LambdaExpressions {
 
 		    @Override
 		    public String toString() {
-		        return name + ": " + preis + "€";
+		        return name + ": " + preis + "ï¿½";
 		    }
 		    
 		}
@@ -74,11 +74,11 @@ public class LambdaExpressions {
 		            new Product("Headset", 80)
 		        );
 
-		        List<Product> keineÜberFünfzig = produkte.stream()
+		        List<Product> keineï¿½berFï¿½nfzig = produkte.stream()
 		            .filter(i -> i.getPreis() > 50)
 		            .collect(Collectors.toList());
 
-		        	double nurPreis = keineÜberFünfzig.stream()
+		        	double nurPreis = keineï¿½berFï¿½nfzig.stream()
 		            .mapToDouble(i -> i.getPreis())
 		            .average()
 		            .orElse(0);

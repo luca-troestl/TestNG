@@ -1,3 +1,10 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "C:\\Users\\yaTerra\\Downloads\\OpenJDK21U-jdk_x64_windows_hotspot_21.0.7_6.msi",
+      "default": true
+    }
+  ]
 }

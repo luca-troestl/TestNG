@@ -1,6 +1,7 @@
 package streams;
 
 import java.io.InputStream;
+import java.util.stream.Collectors;
 
 public class Jahrzente_EX2 {
     String input = "MME";
@@ -36,19 +37,26 @@ public class Jahrzente_EX2 {
             .forEach(System.out::println);
     }
 
-    // Aufgabe 3: Teddys
-    public void printTeddys(String input) {
-        
+    
+
+
     }
-
-
-    
-    
 
     public static void main(String[] args) {
         // Beispielaufrufe
         decades(1950, 2000);
         printPyramid(5);
-        
+
+        // Aufgabe 3: Ich will mein Leid beenden und mich in einen Teddy verwandeln
+        String input = "MME";
+        String teddies = teddy.lines()
+            .map(line -> input.codePoints()
+                .mapToObj(line::formatted)
+                .collect(Collectors.joining()))
+            .collect(Collectors.joining("\n"));
+
+    System.out.println(teddies);
+
     }
+
 }
